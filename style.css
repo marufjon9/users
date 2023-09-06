@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+img {
+  display: block;
+}
+
+.users {
+  padding: 40px 0;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.users-heading {
+  text-align: center;
+  padding: 20px 0;
+}
+.users-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.users-wrapper {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.card-top {
+  height: 150px;
+  background-image: url("/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-bottom {
+  position: relative;
+}
+.card-avatar {
+}
+.card-img {
+  position: absolute;
+  top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 100px;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+}
+.card-content {
+  text-align: center;
+}
+.card-name {
+  padding: 60px 0 20px 0;
+  text-align: center;
+}
+.card-number {
+  position: absolute;
+  top: -140px;
+  right: 20px;
+  width: 25px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+  text-align: center;
+}
+.card-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 5px;
+}
+.contact-item {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.contact-item:nth-child(1) {
+  background-image: url("/email.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-item:nth-child(2) {
+  background-image: url("/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-item:nth-child(3) {
+  background-image: url("/web.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-item:nth-child(4) {
+  background-image: url("/address.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-location {
+  justify-content: center;
+  display: flex;
+  gap: 25px;
+  padding: 15px;
+}
+.card-geo {
+}
+.card-box {
+}
+.card-street {
+}
+.card-suite {
+}
+.card-city {
+}
+.card-zipcode {
+}
+
+@media only screen and (min-width: 475px) {
+  .users-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .users-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
